@@ -6,7 +6,7 @@ st.write("""# Hello👋 This program gives you stats of a superhero.""")
 name = st.text_input(label='Enter name of a superhero!')
 
 if st.button('Get Stats'):
-    api = f'https://superheroapi.com/api/1259154431500484/search/{name}'
+    api = f'https://superheroapi.com/api/Your-Access-key/search/{name}'
     response = requests.get(api)
     
     if response.status_code == 200:
